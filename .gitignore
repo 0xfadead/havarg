@@ -1,0 +1,4 @@
+build/*
+debug/*
+src/*.o
+test.c
