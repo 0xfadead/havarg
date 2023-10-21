@@ -109,11 +109,8 @@ main_return:
 
 /* Extracts the valid arguments */
 struct ha_Arguments
-getValidArguments(const struct ha_ArgumentTemplates *argtemplates,
-                  unsigned long minimum_required_args, int ac,
+getValidArguments(const struct ha_ArgumentTemplates *argtemplates, int ac,
                   const char **av) {
-
-  (void)minimum_required_args;
 
   struct ha_Arguments args = {0};
   args.error = HA_AERROR_SUCCESS;
@@ -298,8 +295,7 @@ ha_GetArguments(const struct ha_ArgumentTemplates *argtemplates, const int ac,
     goto main_return;
   }
 
-  struct ha_Arguments valid_args =
-      getValidArguments(argtemplates, minimum_required_argument_number, ac, av);
+  struct ha_Arguments valid_args = getValidArguments(argtemplates, ac, av);
 
   return valid_args;
 
