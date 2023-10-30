@@ -1,7 +1,10 @@
 # Havarg
 ## A simple command argument parser.
-
 [![CodeFactor](https://www.codefactor.io/repository/github/0xfadead/havarg/badge)](https://www.codefactor.io/repository/github/0xfadead/havarg)
+
+## Deprecation notice
+This library never really worked and is currently being rewritten.
+
 
 ## Building
 ### Linux
